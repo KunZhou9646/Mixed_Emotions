@@ -41,8 +41,8 @@ $ python inference_embedding.py -c '/home/panzexu/kun/Mixed_Emotions/pre-train_I
 
 (2) Synthesize a mixture of emotions:
 ```Bash
-$ cd conversion
+$ cd synthesis
 $ python inference.py -c '/home/panzexu/kun/Mixed_Emotions/emotion_adaptation/outdir/checkpoint_11200'[PATH TO STAGE-II PRETRAINED MODELS] --num 20 --hparams validation_list='/home/panzexu/kun/Mixed_Emotions/synthesis/reader/emotion_list_0019/evaluation_mel_list.txt',SC_kernel_size=1
 ```
 
-Please customize './reader/reader.py' to adjust the percentage of each emotions in the mixture. [line 116 - line 120]
+Please customize './synthesis/reader/reader.py' to adjust the percentage of each emotions in the mixture. [line 116 - line 120]
